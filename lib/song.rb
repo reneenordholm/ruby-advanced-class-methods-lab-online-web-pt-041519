@@ -4,6 +4,7 @@ class Song
   
   def initialize(name)
     @name = name
+    @@all << self
   end
 
   def self.all
@@ -15,7 +16,7 @@ class Song
   end
   
   def self.create
-    
+    @@all.each { |song| puts song.name }
   end
 
 end
