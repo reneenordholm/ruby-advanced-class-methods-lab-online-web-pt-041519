@@ -15,7 +15,7 @@ class Song
   end
   
   def self.create
-    self.all.each { |song| puts song.name }
+    @name.each { |song| puts song.name }
   end
 
 end
